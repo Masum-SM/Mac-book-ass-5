@@ -32,7 +32,7 @@ function getDeliveryCost(charge){
     totalCost()
 }
 
-// getting Input Memory Fields
+// getting  Memory Button
 document.getElementById('8GB-memory').addEventListener('click',function(){
     getMemoryCost(0);
 })
@@ -40,7 +40,7 @@ document.getElementById('16GB-memory').addEventListener('click',function(){
     getMemoryCost(180);
 })
 
-// getting Input Storage Fields
+// getting Storage Button
 document.getElementById('256GB-SSD').addEventListener('click',function(){
   
     getStorageCost(0)
@@ -55,7 +55,7 @@ document.getElementById('1TB-SSD').addEventListener('click',function(){
     getStorageCost(180)
 })
 
-// getting Input Delivey Option Fields
+// getting  Delivey Button
 document.getElementById('free-delivery').addEventListener('click',function(){
  
     getDeliveryCost(0)
