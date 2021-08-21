@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+
+    <!-- Boostrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container mt-5">
+               <div class="row">
+                   <!------------- Image section  -------------->
+                <div class="col-12 col-lg-5 mx-auto pe-5">
+                    <img class="w-100" src="images/mac.png" alt="" srcset="">
+                </div>
+
+                <!------------- configuration and price section  -------------->
+                <div class="col-12 col-lg-7 ps-3">
+                    <h1>Customize your Blue 24-inch
+                        <br> <span>iMac with Apple M1 chip.</span></h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performace core and 4 efficiency cores,7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storade Two Thunderbolt / USB 4 port Magic Mouse Magic Keyboard - US English.</p>
+
+                  <!------------- Memory Input Feild  -------------->
+                    <h3 class="mt-5">Memory</h3>
+                    <input id="8GB-memory" type="text" placeholder="8GB unified memory">
+                    <input id="16GB-memory" type="text" placeholder="16GB unified memory">
+                  <!------------- Storage Input Feild  -------------->
+                    <h3 class="mt-5">Storage</h3>
+                    <input id="256GB-SSD" type="text" placeholder="256GB SSD Storage">
+                    <input id="512GB-SSD" type="text" placeholder="512GB SSD Storage">
+                    <input id="1TB-SSD" type="text" placeholder="1TB SSD Storage">
+                  <!------------- Delivey Cost Input Feild  -------------->
+                    <h3  class="mt-5">Choose your delivery option</h3>
+                    <input id="free-delivery" class="pe-1" type="text" placeholder="Friday,Aug 25 FREE Prime Delivery">
+                    <input id="charge-delivery" class="pe-1" type="text" placeholder="Friday,Aug 21 Delivery Charge $20">
+
+                 <!------------- Price and cost calculation  -------------->
+                    <div class="my-5">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <h3 class="fw-bold">Best Price</h3>
+                                    <h3 class=>$<span id="best-price"  class="fw-bold">1299</span></h3>
+                        
+                                </div>
+                                <hr>
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <h3 class="fw-bold">Extra Memory Cost</h3>
+                                    <h3 class=>$<span id="memory-cost"  class="fw-bold">0</span></h3>
+                        
+                                </div>
+                                <hr>
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <h3 class="fw-bold">Extra Storage Cost</h3>
+                                    <h3 class=>$<span  id="storage-cost"  class="fw-bold">0</span></h3>
+                        
+                                </div>
+                                <hr>
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <h3 class="fw-bold">Delivery Charge</h3>
+                                    <h3 class=>$<span  id="delivery-cost"  class="fw-bold">0</span></h3>
+                        
+                                </div>
+                                <hr class="border border-dark border-2">
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <h3 class="fw-bold">Total Price</h3>
+                                    <h3>$<span id="total-price"  class="fw-bold">1299</span></h3>
+                        
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                  <!------------- pomo code Input Feild  apply button-------------->
+                    <div class="mb-5">
+                        <h3>Add Pomo code</h3>
+                        <input id="pomo-code" class="py-2 me-2" type="text">
+                        <button id="pomo-button" class="btn btn-danger px-4 py-2">Apply</button>
+                    </div>
+              
+              
+                </div>
+                
+               </div>
+            </div>
+        </section>
+        <section>
+            <hr>
+            <!------------- Total part  -------------->
+            <div class="my-5">
+                <h1 class="text-center fw-bolder">Total: $<span id="final-cost">1299</span></h1>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Boostrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JS script  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
