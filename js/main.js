@@ -11,6 +11,9 @@ function totalCost(){
     totalPrice.innerText=parseFloat(bestPrice)+parseFloat(memoryCost)    +parseFloat(storageCost)+parseFloat(deliveryCost);
     document.getElementById('final-cost').innerText=totalPrice.innerText;
 
+    const pomoCode = document.getElementById('pomo-code');
+    pomoCode.removeAttribute('disabled')
+
 }
 
 // getting Memory Cost
@@ -68,14 +71,22 @@ document.getElementById('charge-delivery').addEventListener('click',function(){
 // pomo code input field , apply button and giving discount on total.
 document.getElementById('pomo-button').addEventListener('click',function(){
 
-    let finalCostfield = document.getElementById('final-cost');
+    const finalCostfield = document.getElementById('final-cost');
 
-    let finalCost = parseFloat(finalCostfield.innerText);
+    const finalCost = parseFloat(finalCostfield.innerText);
 
-    const pomoCode = document.getElementById('pomo-code').value;
+    const pomoCode = document.getElementById('pomo-code');
+    const pomoCodeField = pomoCode.value
+    const lessAmount = (finalCost*20)/100;
+    const total = finalCost - lessAmount;
     // condition for working pomo code and set discount on tatal.
-    if(pomoCode == 'stevekaku'){
-        const lessAmount = (finalCost*20)/100;
-        finalCostfield.innerText = finalCost - lessAmount;
+    if(pomoCodeField == 'stevekaku'){
+    
+        finalCostfield.innerText = total;
+       
+
+        pomoCode.setAttribute('disabled',true)
     }
+    pomoCode.value = '';
 })
+
